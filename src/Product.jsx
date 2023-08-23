@@ -2,16 +2,11 @@ import { useState, useEffect } from "react";
 import { API } from "./global.js";
 import "./product.css";
 import Button from "@mui/material/Button";
-// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import { AiOutlineShoppingCart } from "react-icons/Ai";
-
-import { AiOutlineClose } from "react-icons/Ai";
 
 import { NavBar } from "./NavBar";
 import { Pagination } from "./Pagination.jsx";
 import Snackbar from "@mui/material/Snackbar";
-// import Button from "@mui/material/Button";
-// import CloseIcon from "@mui/icons-material/Close";
+
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import { Footer } from "./Footer.jsx";
@@ -171,7 +166,7 @@ export const ProductList = () => {
           key={vertical + horizontal}
           action={
             <Button size="small" color="inherit" onClick={handleClose}>
-              <AiOutlineClose fontSize="small" />
+              <i class="bi bi-x-lg"></i>
             </Button>
           }
         />
