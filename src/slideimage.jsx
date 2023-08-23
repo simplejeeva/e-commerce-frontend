@@ -1,9 +1,6 @@
 import React from "react";
 import { useState } from "react";
-// import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
-import { SlArrowLeft } from "react-icons/Sl";
-import { SlArrowRight } from "react-icons/Sl";
-// import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+
 import "./slideimage.css";
 export const SliderImages = () => {
   const sliderImages = [
@@ -44,10 +41,11 @@ export const SliderImages = () => {
     <div>
       <section className="image-slider">
         <div class="left">
-          <SlArrowLeft onClick={prevSlide} color="black" size="35px" />
+          <i class="bi bi-chevron-left fa-10x" onClick={prevSlide}></i>
+          {/* <SlArrowLeft  /> */}
         </div>
         <div class="right">
-          <SlArrowRight onClick={nextSlide} color="black" size="35px" />
+          <i class="bi bi-chevron-right fa-10x" onClick={nextSlide}></i>
         </div>
         {sliderImages.map((currentSlide, ind) => {
           return (

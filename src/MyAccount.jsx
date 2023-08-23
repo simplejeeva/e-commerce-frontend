@@ -5,12 +5,6 @@ import { useNavigate } from "react-router-dom";
 import { LinearColor } from "./Loading.jsx";
 import { Button } from "@mui/material";
 
-// import { CgProfile } from "react-icons/Cg";
-
-import { BsFillCartCheckFill } from "react-icons/Bs";
-
-import { BsFillBagCheckFill } from "react-icons/Bs";
-
 import "./MyAccount.css";
 
 export const Profile = () => {
@@ -67,17 +61,11 @@ export const Profile = () => {
               color="success"
               onClick={() => navigate("/cart")}
               variant="outlined"
-              startIcon={<BsFillCartCheckFill />}
             >
-              Cart
+              <i class="bi bi-cart-check-fill">cart</i>
             </Button>
-            <Button
-              color="secondary"
-              onClick={() => navigate("/cart")}
-              variant="outlined"
-              startIcon={<BsFillBagCheckFill />}
-            >
-              Your Orders
+            <Button color="secondary" onClick={() => navigate("/cart")}>
+              <i class="bi bi-bag-check-fill">Your Orders</i>
             </Button>
           </div>
         </Card>

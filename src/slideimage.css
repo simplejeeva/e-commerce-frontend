@@ -18,20 +18,20 @@
 }
 .left {
   position: absolute;
-  left: 3rem;
+  left: 1rem;
   top: 50%;
-  font-size: 1rem;
-  color: blue;
+  font-size: 4rem;
+  color: black;
   z-index: 5;
   cursor: pointer;
   user-select: none;
 }
 .right {
   position: absolute;
-  right: 3rem;
+  right: 1rem;
   top: 50%;
-  font-size: 2rem;
-  color: blue;
+  font-size: 4rem;
+  color: black;
   z-index: 5;
   cursor: pointer;
   user-select: none;

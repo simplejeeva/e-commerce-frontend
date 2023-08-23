@@ -1,9 +1,6 @@
 import React from "react";
 import "./Pagination.css";
 
-import { BsFillArrowLeftCircleFill } from "react-icons/Bs";
-import { BsFillArrowRightCircleFill } from "react-icons/Bs";
-
 export const Pagination = ({ total, setCurrentPage, currentPage }) => {
   const pages = [];
   let n = Math.ceil(total / 8);
@@ -23,7 +20,7 @@ export const Pagination = ({ total, setCurrentPage, currentPage }) => {
   return (
     <div className="pagination-container">
       <button onClick={handlePrevious}>
-        <BsFillArrowLeftCircleFill />
+        <i class="bi bi-arrow-left"></i>
       </button>
       {pages.map((page, index) => {
         return (
@@ -33,7 +30,7 @@ export const Pagination = ({ total, setCurrentPage, currentPage }) => {
         );
       })}
       <button onClick={handleNext}>
-        <BsFillArrowRightCircleFill />
+        <i class="bi bi-arrow-right"></i>
       </button>
     </div>
   );

@@ -196,9 +196,8 @@ const ProductCard = ({ data, handleCart }) => {
           }}
           variant="contained"
           color="success"
-          startIcon={<AiOutlineShoppingCart />}
         >
-          Add to cart
+          <i class="bi bi-cart"> Add to cart</i>
         </Button>
       </div>
     </div>
