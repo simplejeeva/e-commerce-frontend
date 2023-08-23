@@ -1,0 +1,58 @@
+body {
+  margin: 0px;
+}
+/* login css */
+.login-page-main-container {
+  margin: 0px;
+  padding: 16px;
+  background-image: url("https://e0.pxfuel.com/wallpapers/779/1012/desktop-wallpaper-commerce-ecommerce-web-ecommerce-website-e-commerce-thumbnail.jpg");
+  background-size: cover; /* Adjust as per your needs */
+  background-position: center;
+  min-height: 100vh;
+}
+#login-container {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  transition: all 0.8s;
+  background-color: rgba(245, 245, 245, 0.844);
+}
+#login-container:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+#login-container h4 {
+  font-family: "Allura", cursive;
+  font-size: 20px;
+  margin: 5px auto;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signin {
+  margin: 0px;
+}
+.signin:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.showpassword {
+  display: flex;
+  margin-right: 0px auto;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #login-container {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.8s;
+    background-color: rgba(245, 245, 245, 0.844);
+  }
+}
