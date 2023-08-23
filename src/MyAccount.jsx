@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { LinearColor } from "./Loading.jsx";
 import { Button } from "@mui/material";
 
-import { CgProfile } from "react-icons/Cg";
+// import { CgProfile } from "react-icons/Cg";
 
 import { BsFillCartCheckFill } from "react-icons/Bs";
 
@@ -51,7 +51,7 @@ export const Profile = () => {
                 alt="Selected Image"
               />
             ) : (
-              <CgProfile sx={{ fontSize: "160px" }} />
+              <li class="bi bi-person-circle"></li>
             )}
           </div>
           <input id="uploadfile" type="file" onChange={handleImageUpload} />
